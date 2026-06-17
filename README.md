@@ -88,3 +88,11 @@ URL:
 ```
 github.com/<username>/<repo>/network
 ```
+
+## Smazat soubor z trackování
+```
+git rm -r --cached app/staticfiles/
+git add .gitignore
+git commit -m "remove staticfiles from tracking"
+git push origin main
+```
